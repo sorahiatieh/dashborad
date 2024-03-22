@@ -2,8 +2,19 @@
     body{
         grid-template-areas:"header header""main main";
     }
-    aside,.title_header,header .search_box_header{
+    aside,.title_header,header .search_box_header,.full_name_user{
         display: none;
+    }
+    header{
+        padding: 8px;
+    }
+    header .user_action{
+        gap: 1.5rem;
+    }
+    aside{
+        width: 68%;
+        z-index: 999;
+        background-color: var(--color_white);
     }
 }
 
