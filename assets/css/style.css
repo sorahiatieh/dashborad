@@ -31,7 +31,7 @@ body{
 
 /* colors dark */
 :root[data-theme="dark"] {
-    /* --color_white:#cb0909; */
+  /* background-color: var(--color_black); */
 }
 
 h1{
@@ -80,7 +80,9 @@ a{
 ul{
     list-style: none;
 }
-
+.box_shadow{
+    background-color: var(--color_white);
+}
 header{
     /* background-color: #1ECB4F; */
     grid-area: header;
@@ -106,6 +108,7 @@ aside{
 main{
     /* background-color: #F46D22; */
     grid-area: main;
+    padding: 30px;
 }
 
 
@@ -189,7 +192,6 @@ aside .logo span{
 .search_box_header{
     width: 52%;
     height: 44px;
-    background-color: var(--color_white);
     border-radius: 8px;
     padding: 0 20px;
     position: relative;
@@ -272,4 +274,21 @@ header .user_info .full_name_user{
     position: fixed;
     display: none;
 
+}
+.header_left_content_main span{
+    color: var(--color_black);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+.header_left_content_main div{
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin: 8px 0;
+}
+.header_left_content_main h6{
+    color: var(--color_gray);
+    font-size: 32px;
+    font-weight: 600;
 }
