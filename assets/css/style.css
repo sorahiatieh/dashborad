@@ -30,9 +30,9 @@ body{
 
 
 /* colors dark */
-:root[data-theme="dark"] {
-  /* background-color: var(--color_black); */
-}
+/* :root[data-theme="dark"] .box_shadow{
+   background-color: var(--color_black);
+} */
 
 h1{
     color: var(--color_white);
@@ -192,6 +192,7 @@ aside .logo span{
 .search_box_header{
     width: 52%;
     height: 44px;
+    /* background-color: var(--color_white); */
     border-radius: 8px;
     padding: 0 20px;
     position: relative;
@@ -221,7 +222,6 @@ header .user_action{
     gap: 2.5rem;
 }
 header .user_action .message_user button{
-    background-color: var(--color_white);
     border: none;
     padding: 10px;
     
@@ -275,19 +275,19 @@ header .user_info .full_name_user{
     display: none;
 
 }
-.header_left_content_main span{
+.header_letf_content_main span{
     color: var(--color_black);
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.1rem;
 }
-.header_left_content_main div{
+.header_letf_content_main div {
     display: flex;
     align-items: center;
     gap: 19px;
     margin: 8px 0;
 }
-.header_left_content_main h6{
+.header_letf_content_main div h6{
     color: var(--color_gray);
     font-size: 32px;
     font-weight: 600;
