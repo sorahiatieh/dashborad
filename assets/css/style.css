@@ -567,42 +567,52 @@ header .user_info .full_name_user{
 .section_coins{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 2rem;
+    gap: 1.9rem;
 }
 
 .card_coin{
-   width: 30%;
-   padding: 32px 19px;
+    padding: 32px 19px;
 }
 
 .left_header_card_coin{
     gap: 19px;
 }
 
-.text_header_card_coin{
+.text_header_card_coin h6{
     color: var(--color_gray);
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 10px;
 }
 
-.right_header_card_coin{}
+.text_header_card_coin span{
+    color: var(--color_gray);
+    font-size: 12px;
+    font-weight: 500;
+   opacity: 0.6;
+}
 
 .right_header_card_coin avg{
     position: relative;
     top: -7px;
 }
 
-.right_header_card_coin span{
-    color: var(--color_gray);
-    font-size: 12px;
-    font-weight: 500;
-    opacity: 0.6;
+.body_card_coin{
+    margin-top: 20px;
+    gap: 1.5rem;
 }
 
-.body_card_coin{}
+.left_body_card_coin h5{
+    color: var(--color_gray);
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 19px;
+}
 
-.left_body_card_coin{}
+.left_body_card_coin span{
+    font-size: 14px;
+    font-weight: 600;
+}
 
 .color_1ECB4F{
     color: var(--color_green);
