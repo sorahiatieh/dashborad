@@ -549,3 +549,8 @@ header .user_info .full_name_user{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+
+.section_coins{
+    display: flex;
+    grid-template-columns: repeat(2,);
+},
