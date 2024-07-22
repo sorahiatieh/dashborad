@@ -1,9 +1,8 @@
-
-
-
 let burger_menu = document.querySelector('.burger_menu')
 let sidbar = document.querySelector('aside')
 let bg_cover = document.querySelector('.bg_cover')
+let btn_notif= document.querySelector('#btn_notif');
+let list_notif = document.querySelector('#list_notif')
 
 burger_menu.addEventListener('click', e => {
   console.log('click')
@@ -16,7 +15,14 @@ bg_cover.addEventListener('click', e => {
   bg_cover.classList.remove('d_block')
 })
 
-
+btn_notif.addEventListener('click', e=>{
+  if(list_notif.classList.contains('active_notif')){
+    list_notif.classList.remove('active_notif')
+  }
+  else{
+    list_notif.classList.add('active_notif')
+  }
+})
 
 var options = {
   chart: {

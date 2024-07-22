@@ -235,6 +235,42 @@ header .user_action .message_user button{
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
+.message_user{
+    position: relative;
+}
+
+.message_list_user{
+    width: 150px;
+    z-index: 100;
+    position: absolute;
+    top: 96px;
+    right: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0 rgba(218,188,255,0.20);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 250ms ease-in-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+}
+
+.message_list_user li{
+    padding: 10px;
+}
+
+.message_list_user.active_notif{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+}
+
 header .user_info{
     display: flex;
     gap: 15px;

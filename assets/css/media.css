@@ -25,6 +25,9 @@
     .container_main{
         grid-template-columns: repeat(1,1fr);   
     }
+    .message_list_user{
+        right: 50px;
+    }
 }
 
 @media (min-width:1000px){
