@@ -2,7 +2,9 @@ let burger_menu = document.querySelector('.burger_menu')
 let sidbar = document.querySelector('aside')
 let bg_cover = document.querySelector('.bg_cover')
 let btn_notif= document.querySelector('#btn_notif');
-let list_notif = document.querySelector('#list_notif')
+let list_notif = document.querySelector('#list_notif');
+let full_name_user=document.querySelector('.full_name_user');
+let list_account_user=document.querySelector('.list_account_user');
 
 burger_menu.addEventListener('click', e => {
   console.log('click')
@@ -92,4 +94,13 @@ btnOne.addEventListener('click', function (e) {
     data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 12, 14, 15]
   }])
 
+})
+
+full_name_user.addEventListener('click', e=>{
+  //console.log('click')
+  if(list_account_user.classList.contains('active_account')){
+      list_account_user.classList.remove('active_account');
+  }else{
+    list_account_user.classList.add('active_account');
+  }
 })
