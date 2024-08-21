@@ -25,45 +25,78 @@ body{
     --color_light_purple:#8C77ED;
     --color_blue:#3A6FF8;
     --color_green:#1ECB4F;
+    --color_text_green:#1ECB4F;
+    --color_bg_green:#1ECB4F;
     --color_50AF95:#50AF95;
     --color_light_red:#F46D22;
     --color_353E4D:#353E4D;
     --color_F5B300:#F5B300;
     --color_1E2A41:#1E2A41;
-    --color_B6BFC8: #B6BFC8;
+    --color_B6BFC8:#B6BFC8;
     --color_1B2028:#1B2028;
     --color_9E9E9E:#9E9E9E;
-    --color_E4E4E4: #E4E4E4;
+    --color_black_to_white:#1A2029;
+    --color_bg_gray:#14161D;
+    --color_bg_201F21:#201F21;
+    --color_text_E4E4E4:#E4E4E4;
 }
 
 
 /* colors dark */
+:root[data-theme="dark"] {
+    --color_gray:#fff;
+}
+:root[data-theme="dark"] .section_info_bitcoin,:root[data-theme="dark"] .buttons_operation{
+    background-color: var(--color_bg_gray);
+}
+:root[data-theme="dark"] .active_btn_operation{
+    background-color: var(--color_1B2028);
+}
+:root[data-theme="dark"] .filter_buy_bitcoin{
+    background-color: var(--color_bg_201F21);
+}
+:root[data-theme="dark"] .filter_btc > div h5{
+    color: var(--color_text_E4E4E4);
+}
+:root[data-theme="dark"] .filter_btc_page button{
+    color: var(--color_9E9E9E);
+}
+:root[data-theme="dark"] .toggle_darkmode  .active_darkmode{
+    background-color: var(--color_bg_gray);
+}
+:root[data-theme="dark"]  .filter_btc_page .active_btn{
+    color: var(--color_text_E4E4E4);
+}
+:root[data-theme="dark"] .filter_buy_bitcoin svg path, :root[data-theme="dark"] .burger_menu svg path,
+ :root[data-theme="dark"] .filter_chart_bitcoin .dropdwon_filter svg:last-child path{
+    fill: var(--color_white);
+}
+:root[data-theme="dark"] aside .logo span,:root[data-theme="dark"] header .title_header h5,:root[data-theme="dark"] .full_name_user span,
+ :root[data-theme="dark"] .header_letf_content_main div h6, :root[data-theme="dark"] .filter_btc > span{
+    color: var(--color_white);
+}
+:root[data-theme="dark"] .navgation_sidbar li a span, :root[data-theme="dark"] .filter_chart_bitcoin .dropdwon_filter span,
+:root[data-theme="dark"] .toggle_darkmode  button span ,:root[data-theme="dark"] .search_box_header input,
+ :root[data-theme="dark"]  .header_letf_content_main span{
+ color: var(--color_9E9E9E);
+}
+:root[data-theme="dark"]  .navgation_sidbar li a svg path, :root[data-theme="dark"] .filter_chart_bitcoin .modal_filter svg path,
+:root[data-theme="dark"] .toggle_darkmode  button:first-child svg path,:root[data-theme="dark"] .header_letf_content_main div svg path,
+:root[data-theme="dark"] .search_box_header button svg path,:root[data-theme="dark"] .message_user button svg path{
+    fill: var(--color_9E9E9E);
+}
 :root[data-theme="dark"] .box_shadow{
-    background-color: var(--color_1B2028);
- }
- :root[data-theme="dark"] body{
-    background-color: var(--color_gray);
- }
- :root[data-theme="dark"] aside{
-    background-color: var(--color_1B2028);
- }
- :root[data-theme="dark"] .navgation_sidbar li a span,:root[data-theme="dark"] .search_box_header input ,
- :root[data-theme="dark"]  .header_letf_content_main span, :root[data-theme="dark"] .filter_btc_page button{
-  color: var(--color_9E9E9E);
- }
- :root[data-theme="dark"]  .navgation_sidbar li a svg path,:root[data-theme="dark"] .search_box_header button svg path,
- :root[data-theme="dark"] .message_user button svg path,  :root[data-theme="dark"] .header_letf_content_main div svg path , :root[data-theme="dark"] .filter_btc div svg path{
-     fill: var(--color_9E9E9E);
- }
- :root[data-theme="dark"] aside .logo span,:root[data-theme="dark"] header .title_header h5,:root[data-theme="dark"] .full_name_user span ,
- :root[data-theme="dark"] .header_letf_content_main div h6 , :root[data-theme="dark"]  .row_chart_bitcoin h5 ,
-  :root[data-theme="dark"]  .row_header_operation span ,:root[data-theme="dark"] .section_portfolio h5 {
-     color: var(--color_white);
- }
- :root[data-theme="dark"] .filter_btc div h5,  :root[data-theme="dark"] .filter_btc span{
-    color: var(--color_E4E4E4);
- }
+   background-color: var(--color_1B2028);
+}
+:root[data-theme="dark"] body{
+   background-color: var(--color_bg_gray);
+}
+:root[data-theme="dark"] aside{
+   background-color: var(--color_1B2028);
+}
 
+
+/* *****************************************/
 h1{
     color: var(--color_white);
 }
@@ -261,42 +294,6 @@ header .user_action .message_user button{
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
-.message_user{
-    position: relative;
-}
-
-.message_list_user{
-    width: 150px;
-    z-index: 100;
-    position: absolute;
-    top: 96px;
-    right: 30px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px 0 rgba(218,188,255,0.20);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 250ms ease-in-out;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    -webkit-transition: all 250ms ease-in-out;
-    -moz-transition: all 250ms ease-in-out;
-    -ms-transition: all 250ms ease-in-out;
-    -o-transition: all 250ms ease-in-out;
-}
-
-.message_list_user li{
-    padding: 10px;
-}
-
-.message_list_user.active_notif{
-    opacity: 1;
-    visibility: visible;
-    pointer-events: visible;
-}
-
 header .user_info{
     display: flex;
     gap: 15px;
@@ -309,93 +306,6 @@ header .user_info .full_name_user{
     position: relative;
     top: 5px;
 }
-
-.list_account_user{
-    position: absolute;
-    top: 95px;
-    right: 15px;
-    border-radius: 13px;
-    z-index: 100;
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.25);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all ease-in-out 250ms;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
-    -webkit-transition: all ease-in-out 250ms;
-    -moz-transition: all ease-in-out 250ms;
-    -ms-transition: all ease-in-out 250ms;
-    -o-transition: all ease-in-out 250ms;
-}
-
-.list_account_user.active_account{
-    opacity: 1;
-    visibility: visible;
-    pointer-events: visible;
-}
-
-.search_user input,
-.search_user button{
-    border: none;
-    background-color: transparent;
-}
-.search_user{
-    position: relative;
-    height: 50px;
-    padding: 10px 20px;
-    border-bottom: 1px solid var(--color_light_gray);
-}
-
-.search_user input{
-    height: 100%;
-    width: 100%;
-    padding-left: 15px;
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--color_B6BFC8);
-}
-.search_user button{
-    position: absolute;
-    left: 6px;
-}
-
-.info_user_account,
-.account_user{
-    gap: 10px;
-}
-
-.account_user{
-    padding: 10px 20px;
-}
-
-.info_user_account img,
-.img_user_info img{
-    width: 44px;
-    height: 44px;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-}
-
-.account_text_user h6{
-    color: var(--color_gray);
-    font-size: 17px;
-    font-weight: 500;
-}
-
-.account_text_user span{
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--color_black);
-    opacity: 0.6;
-}
-
-
 .burger_menu{
     display: flex;
     align-items: center;
@@ -812,4 +722,108 @@ header .user_info .full_name_user{
 }
 .align_items_end{
     align-items: end;
+}
+.message_list_user {
+    width: 150px;
+    z-index: 100;
+    position: absolute;
+    top: 96px;
+    right: 185px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all ease-in-out 250ms;
+    box-shadow: 5px 5px 20px 0 rgba(218, 188, 255, 0.20);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: all ease-in-out 250ms;
+    -moz-transition: all ease-in-out 250ms;
+    -ms-transition: all ease-in-out 250ms;
+    -o-transition: all ease-in-out 250ms;
+}
+.message_list_user.active_notif{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+}
+.message_list_user li{
+    padding: 10px;
+}
+.list_account_user {
+    position: absolute;
+    z-index: 100;
+    top: 95px;
+    right: 15px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all ease-in-out 250ms;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    -webkit-transition: all ease-in-out 250ms;
+    -moz-transition: all ease-in-out 250ms;
+    -ms-transition: all ease-in-out 250ms;
+    -o-transition: all ease-in-out 250ms;
+}
+.list_account_user.active_account{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+}
+.search_user{
+    position: relative;
+    height: 50px;
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--color_light_gray);
+    
+}
+.search_user input{
+    height: 100%;
+    width: 100%;
+    padding-left: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--color_B6BFC8);
+}
+.search_user input,.search_user button{
+    border: none;
+    background-color: transparent;
+}
+.search_user button{
+    position: absolute;
+    left: 6px;
+}
+.account_user{
+    padding: 10px 20px;
+}
+.account_user,.info_user_account{
+    gap: 10px;
+}
+.info_user_account img,.img_user_info img{
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.account_text_user h6{
+    color: var(--color_gray);
+    font-size: 17px;
+    font-weight: 500;
+}
+.account_text_user span{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color_black);
+    opacity: 0.6;
 }

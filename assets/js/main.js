@@ -1,12 +1,15 @@
-let burger_menu = document.querySelector('.burger_menu');
-let sidbar = document.querySelector('aside');
-let bg_cover = document.querySelector('.bg_cover');
-let btn_notification = document.querySelector('#btn_notification');
-let list_notification = document.querySelector('#list_notification');
-let full_name_user = document.querySelector('.full_name_user');
-let list_account_user  = document.querySelector('.list_account_user ');
-let ligthModeBtn =  document.querySelector('#ligthModeBtn');
-let darkModeBtn =  document.querySelector('#darkModeBtn');
+
+
+
+let burger_menu = document.querySelector('.burger_menu')
+let sidbar = document.querySelector('aside')
+let bg_cover = document.querySelector('.bg_cover')
+let btn_notification = document.querySelector('#btn_notification')
+let list_notification = document.querySelector('#list_notification')
+let full_name_user = document.querySelector('.full_name_user')
+let list_account_user  = document.querySelector('.list_account_user ')
+let ligthModeBtn =  document.querySelector('#ligthModeBtn')
+let darkModeBtn =  document.querySelector('#darkModeBtn')
 
 burger_menu.addEventListener('click', e => {
   sidbar.classList.add('d_block')

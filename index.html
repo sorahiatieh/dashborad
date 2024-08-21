@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
+
 </head>
 
 <body>
@@ -205,7 +206,7 @@
         </form>
         <div class="user_action">
             <div class="message_user">
-                <button class="box_shadow" id="btn_notif">
+                <button class="box_shadow" id="btn_notification">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
                             d="M12.02 20.53C9.68999 20.53 7.35999 20.16 5.14999 19.42C4.30999 19.13 3.66999 18.54 3.38999 17.77C3.09999 17 3.19999 16.15 3.65999 15.39L4.80999 13.48C5.04999 13.08 5.26999 12.28 5.26999 11.81V8.91998C5.26999 5.19998 8.29999 2.16998 12.02 2.16998C15.74 2.16998 18.77 5.19998 18.77 8.91998V11.81C18.77 12.27 18.99 13.08 19.23 13.49L20.37 15.39C20.8 16.11 20.88 16.98 20.59 17.77C20.3 18.56 19.67 19.16 18.88 19.42C16.68 20.16 14.35 20.53 12.02 20.53ZM12.02 3.66998C9.12999 3.66998 6.76999 6.01998 6.76999 8.91998V11.81C6.76999 12.54 6.46999 13.62 6.09999 14.25L4.94999 16.16C4.72999 16.53 4.66999 16.92 4.79999 17.25C4.91999 17.59 5.21999 17.85 5.62999 17.99C9.80999 19.39 14.24 19.39 18.42 17.99C18.78 17.87 19.06 17.6 19.19 17.24C19.32 16.88 19.29 16.49 19.09 16.16L17.94 14.25C17.56 13.6 17.27 12.53 17.27 11.8V8.91998C17.27 6.01998 14.92 3.66998 12.02 3.66998Z"
@@ -219,7 +220,7 @@
                         <circle cx="17" cy="5" r="2.5" fill="#F46D22" stroke="#E6EFFE" />
                     </svg>
                 </button>
-                <ul class="box_shadow message_list_user" id="list_notif">
+                <ul class="box_shadow  message_list_user" id="list_notification">
                     <li><a href="#">message</a></li>
                     <li><a href="#">message</a></li>
                     <li><a href="#">message</a></li>
@@ -240,9 +241,9 @@
                         </svg>
                     </span>
                 </div>
-                <div class="list_account_user box_shadow">
-                    <form action="" class="search_user">
-                        <input type="text" placeholder="search">
+                <div class="list_account_user box_shadow ">
+                    <form class="search_user">
+                        <input type="text" placeholder="Search...">
                         <button>
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
                                 <path d="M16.4115 15.349H15.5885L15.2969 15.0677C16.3177 13.8802 16.9323 12.3385 16.9323 10.6615C16.9323 6.92187 13.901 3.89062 10.1615 3.89062C6.42187 3.89062 3.39062 6.92187 3.39062 10.6615C3.39062 14.401 6.42187 17.4323 10.1615 17.4323C11.8385 17.4323 13.3802 16.8177 14.5677 15.7969L14.849 16.0885V16.9115L20.0573 22.1094L21.6094 20.5573L16.4115 15.349ZM10.1615 15.349C7.56771 15.349 5.47396 13.2552 5.47396 10.6615C5.47396 8.06771 7.56771 5.97396 10.1615 5.97396C12.7552 5.97396 14.849 8.06771 14.849 10.6615C14.849 13.2552 12.7552 15.349 10.1615 15.349Z" fill="#B6BFC8"/>
@@ -278,7 +279,7 @@
 
     <main>
         <div class="search_box_main">
-            <form action="" class="search_box_header">
+            <form action="" class="search_box_header box_shadow">
                 <input type="text" placeholder="Search...">
                 <button>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -378,6 +379,10 @@
                         </div>
                     </div>
                     <div class="" id="chart_bitcoin_btc"></div>
+
+
+
+
                 </div>
                 <div class="operation_section box_shadow border_raduis_20">
                     <div class="row_header_operation">
@@ -537,12 +542,9 @@
                         <div class="header_card_coin d_flex justify_content_between align_items_center">
                             <div class="left_header_card_coin d_flex align_items_center">
                                 <div class="icon_header_card_coin">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="45" viewBox="0 0 44 45" fill="none">
-                                        <rect y="0.400024" width="44" height="44" rx="8" fill="#F8F8F8"/>
-                                        <path d="M18.7701 24.8299L20.3801 25.5499C21.4101 26.0099 22.5901 26.0099 23.6301 25.5499L25.2401 24.8299C26.6801 24.1899 28.0101 25.9299 27.0101 27.1499L23.5501 31.3799C22.7001 32.4199 21.3101 32.4199 20.4501 31.3799L17.0001 27.1499C15.9901 25.9299 17.3201 24.1899 18.7701 24.8299Z" fill="#3A6FF8"/>
-                                        <path d="M18.5703 22.0699C18.2703 22.2899 18.3103 22.7499 18.6503 22.9199L21.0003 24.0899C21.5503 24.3699 22.4403 24.3699 22.9803 24.0899L25.3303 22.9199C25.6603 22.7499 25.7003 22.2999 25.4103 22.0699L22.3003 19.7299C22.1203 19.5999 21.8803 19.5999 21.7003 19.7299L18.5703 22.0699Z" fill="#3A6FF8"/>
-                                        <path d="M27.8803 18.64L23.7103 13.44C23.6303 13.34 23.5403 13.25 23.4503 13.16C23.1903 12.91 22.8203 13.14 22.8203 13.5V17.8C22.8203 17.96 22.8903 18.11 23.0203 18.2L27.1703 21.32L27.3503 21.45C27.5303 21.58 27.7803 21.58 27.9303 21.42C28.6303 20.66 28.6203 19.56 27.8803 18.64Z" fill="#3A6FF8"/>
-                                        <path d="M16.111 18.73L20.261 13.45C20.341 13.35 20.421 13.26 20.511 13.17C20.771 12.92 21.141 13.14 21.141 13.51V17.88C21.141 18.04 21.071 18.18 20.941 18.28L16.811 21.45L16.641 21.58C16.461 21.71 16.211 21.71 16.051 21.54C15.371 20.77 15.381 19.67 16.111 18.73Z" fill="#3A6FF8"/>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                                        <rect width="44" height="44" rx="10" fill="#F8F8F8"/>
+                                        <path d="M22 12C16.48 12 12 16.48 12 22C12 27.52 16.48 32 22 32C27.52 32 32 27.52 32 22C32 16.48 27.52 12 22 12ZM25.82 26.32C25.73 26.8 25.32 27.14 24.84 27.14H19.3C18.64 27.14 18.16 26.5 18.34 25.87L19.18 22.92L17.47 23.26C17.42 23.27 17.37 23.27 17.32 23.27C16.97 23.27 16.66 23.02 16.59 22.67C16.51 22.26 16.77 21.87 17.18 21.79L19.65 21.3L20.96 16.73C21.02 16.52 21.22 16.37 21.44 16.37H22.8C23.46 16.37 23.94 16.99 23.77 17.63L22.96 20.64L24.89 20.25C25.29 20.17 25.69 20.43 25.77 20.84C25.85 21.25 25.59 21.64 25.18 21.72L22.52 22.25L21.97 24.3H25C25.62 24.3 26.09 24.86 25.98 25.48L25.82 26.32Z" fill="#64CFF9"/>
                                       </svg>
                                 </div>
                                 <div class="text_header_card_coin">
@@ -622,6 +624,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="section_portfolio box_shadow border_raduis_20">
                     <h5>My Portfolio</h5>
@@ -664,7 +667,7 @@
                             </div>
                             <div class="action_row_portfolio d_flex align_items_end flex_dir_column">
                                 <span class="color_F46D22">-4.40%</span>
-                                <span>0.12543 BTC</span>
+                                <span>0.12543 ETH</span>
                             </div>
                         </div>
                         <div class="row_portfolio d_flex justify_content_between align_items_center">
@@ -682,7 +685,7 @@
                             </div>
                             <div class="action_row_portfolio d_flex align_items_end flex_dir_column">
                                 <span class="color_F46D22">+5.25%</span>
-                                <span>0.12543 ITC</span>
+                                <span>0.12543 ETH</span>
                             </div>
                         </div>
                         <div class="row_portfolio d_flex justify_content_between align_items_center">
@@ -704,7 +707,7 @@
                             </div>
                             <div class="action_row_portfolio d_flex align_items_end flex_dir_column">
                                 <span class="color_F46D22">+8.00%</span>
-                                <span>0.12543 ITC</span>
+                                <span>0.12543 ETH</span>
                             </div>
                         </div>
                         <div class="row_portfolio d_flex justify_content_between align_items_center">
@@ -724,7 +727,7 @@
                             </div>
                             <div class="action_row_portfolio d_flex align_items_end flex_dir_column">
                                 <span class="color_F46D22">+8.00%</span>
-                                <span>0.12543 ITC</span>
+                                <span>0.12543 ETH</span>
                             </div>
                         </div>
                     </div>
@@ -732,7 +735,9 @@
             </div>
         </div>
     </main>
+
     <div class="bg_cover">
+
     </div>
     <script src="assets/js/plugins/apexcharts.js"></script>
 
