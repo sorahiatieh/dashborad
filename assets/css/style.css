@@ -48,7 +48,7 @@ body{
     background-color: var(--color_1B2028);
  }
  :root[data-theme="dark"] .navgation_sidbar li a span,:root[data-theme="dark"] .search_box_header input ,
- :root[data-theme="dark"]  .header_letf_content_main span,  :root[data-theme="dark"] .filter_btc button{
+ :root[data-theme="dark"]  .header_letf_content_main span, :root[data-theme="dark"] .filter_btc_page button{
   color: var(--color_9E9E9E);
  }
  :root[data-theme="dark"]  .navgation_sidbar li a svg path,:root[data-theme="dark"] .search_box_header button svg path,
