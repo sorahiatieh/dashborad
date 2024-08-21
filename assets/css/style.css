@@ -33,6 +33,7 @@ body{
     --color_B6BFC8: #B6BFC8;
     --color_1B2028:#1B2028;
     --color_9E9E9E:#9E9E9E;
+    --color_E4E4E4: #E4E4E4;
 }
 
 
@@ -51,14 +52,17 @@ body{
   color: var(--color_9E9E9E);
  }
  :root[data-theme="dark"]  .navgation_sidbar li a svg path,:root[data-theme="dark"] .search_box_header button svg path,
- :root[data-theme="dark"] .message_user button svg path,  :root[data-theme="dark"] .header_letf_content_main div svg path{
+ :root[data-theme="dark"] .message_user button svg path,  :root[data-theme="dark"] .header_letf_content_main div svg path , :root[data-theme="dark"] .filter_btc div svg path{
      fill: var(--color_9E9E9E);
  }
  :root[data-theme="dark"] aside .logo span,:root[data-theme="dark"] header .title_header h5,:root[data-theme="dark"] .full_name_user span ,
- :root[data-theme="dark"] .header_letf_content_main div h6{
+ :root[data-theme="dark"] .header_letf_content_main div h6 , :root[data-theme="dark"]  .row_chart_bitcoin h5 ,
+  :root[data-theme="dark"]  .row_header_operation span ,:root[data-theme="dark"] .section_portfolio h5 {
      color: var(--color_white);
  }
- 
+ :root[data-theme="dark"] .filter_btc div h5,  :root[data-theme="dark"] .filter_btc span{
+    color: var(--color_E4E4E4);
+ }
 
 h1{
     color: var(--color_white);
