@@ -1,29 +1,50 @@
+
+
+
 let burger_menu = document.querySelector('.burger_menu')
 let sidbar = document.querySelector('aside')
 let bg_cover = document.querySelector('.bg_cover')
-let btn_notif= document.querySelector('#btn_notif');
-let list_notif = document.querySelector('#list_notif');
-let full_name_user=document.querySelector('.full_name_user');
-let list_account_user=document.querySelector('.list_account_user');
+let btn_notification = document.querySelector('#btn_notification')
+let list_notification = document.querySelector('#list_notification')
+let full_name_user = document.querySelector('.full_name_user')
+let list_account_user  = document.querySelector('.list_account_user ')
+let ligthModeBtn =  document.querySelector('#ligthModeBtn')
+let darkModeBtn =  document.querySelector('#darkModeBtn')
 
 burger_menu.addEventListener('click', e => {
-  console.log('click')
   sidbar.classList.add('d_block')
   bg_cover.classList.add('d_block')
 })
 bg_cover.addEventListener('click', e => {
-  console.log('click')
   sidbar.classList.remove('d_block')
   bg_cover.classList.remove('d_block')
 })
 
-btn_notif.addEventListener('click', e=>{
-  if(list_notif.classList.contains('active_notif')){
-    list_notif.classList.remove('active_notif')
+btn_notification.addEventListener('click',event =>{
+  if(list_notification.classList.contains('active_notif')){
+    list_notification.classList.remove('active_notif')
   }
   else{
-    list_notif.classList.add('active_notif')
+    list_notification.classList.add('active_notif')
+
   }
+})
+
+full_name_user.addEventListener('click',e =>{
+
+  if(list_account_user.classList.contains('active_account')){
+    list_account_user.classList.remove('active_account')
+  }
+  else{
+    list_account_user.classList.add('active_account')
+  }
+})
+
+ligthModeBtn.addEventListener('click', event =>{
+  console.log(event.target)
+})
+darkModeBtn.addEventListener('click',event =>{
+ document.documentElement.setAttribute('data-theme','dark')
 })
 
 var options = {
@@ -34,10 +55,10 @@ var options = {
   },
   series: [{
     name: 'فروش',
-    data: [70,95,26,30, 40, 35, 85,10,50, 49, 60, 70, 91, 125, 12, 14, 15]
+    data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 12, 14, 15]
   }],
   xaxis: {
-    categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2001,2004,2006,2010,2012,2020],
+    categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2001],
     axisBorder: {
       show: true,
       color: '#31353F',
@@ -94,13 +115,4 @@ btnOne.addEventListener('click', function (e) {
     data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 12, 14, 15]
   }])
 
-})
-
-full_name_user.addEventListener('click', e=>{
-  //console.log('click')
-  if(list_account_user.classList.contains('active_account')){
-      list_account_user.classList.remove('active_account');
-  }else{
-    list_account_user.classList.add('active_account');
-  }
 })

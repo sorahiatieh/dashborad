@@ -31,13 +31,34 @@ body{
     --color_F5B300:#F5B300;
     --color_1E2A41:#1E2A41;
     --color_B6BFC8: #B6BFC8;
+    --color_1B2028:#1B2028;
+    --color_9E9E9E:#9E9E9E;
 }
 
 
 /* colors dark */
-/* :root[data-theme="dark"] .box_shadow{
-   background-color: var(--color_black);
-} */
+:root[data-theme="dark"] .box_shadow{
+    background-color: var(--color_1B2028);
+ }
+ :root[data-theme="dark"] body{
+    background-color: var(--color_gray);
+ }
+ :root[data-theme="dark"] aside{
+    background-color: var(--color_1B2028);
+ }
+ :root[data-theme="dark"] .navgation_sidbar li a span,:root[data-theme="dark"] .search_box_header input ,
+ :root[data-theme="dark"]  .header_letf_content_main span{
+  color: var(--color_9E9E9E);
+ }
+ :root[data-theme="dark"]  .navgation_sidbar li a svg path,:root[data-theme="dark"] .search_box_header button svg path,
+ :root[data-theme="dark"] .message_user button svg path,  :root[data-theme="dark"] .header_letf_content_main div svg path{
+     fill: var(--color_9E9E9E);
+ }
+ :root[data-theme="dark"] aside .logo span,:root[data-theme="dark"] header .title_header h5,:root[data-theme="dark"] .full_name_user span ,
+ :root[data-theme="dark"] .header_letf_content_main div h6{
+     color: var(--color_white);
+ }
+ 
 
 h1{
     color: var(--color_white);
