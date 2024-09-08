@@ -1,6 +1,3 @@
-
-
-
 let burger_menu = document.querySelector('.burger_menu')
 let sidbar = document.querySelector('aside')
 let bg_cover = document.querySelector('.bg_cover')
@@ -40,12 +37,23 @@ full_name_user.addEventListener('click',e =>{
   }
 })
 
-ligthModeBtn.addEventListener('click', event =>{
-  console.log(event.target)
-})
-darkModeBtn.addEventListener('click',event =>{
- document.documentElement.setAttribute('data-theme','dark')
-})
+
+const setTemeMode = (themeMode) =>{
+  document.documentElement.setAttribute('data-theme',themeMode)
+  ligthModeBtn.classList.toggle('active_darkmode', themeMode === 'light')
+  darkModeBtn.classList.toggle('active_darkmode', themeMode === 'dark')
+  localStorage.setItem('themeMode',themeMode)
+}
+
+ligthModeBtn.addEventListener('click', () => setTemeMode('light'))
+
+darkModeBtn.addEventListener('click',() => setTemeMode('dark'))
+
+let saveThemeMode = localStorage.getItem('themeMode')
+
+setTemeMode(saveThemeMode || 'light')
+
+
 
 var options = {
   chart: {
