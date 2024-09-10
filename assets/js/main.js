@@ -1,3 +1,6 @@
+
+
+
 let burger_menu = document.querySelector('.burger_menu')
 let sidbar = document.querySelector('aside')
 let bg_cover = document.querySelector('.bg_cover')
@@ -38,21 +41,11 @@ full_name_user.addEventListener('click',e =>{
 })
 
 
-const setTemeMode = (themeMode) =>{
-  document.documentElement.setAttribute('data-theme',themeMode)
-  ligthModeBtn.classList.toggle('active_darkmode', themeMode === 'light')
-  darkModeBtn.classList.toggle('active_darkmode', themeMode === 'dark')
-  localStorage.setItem('themeMode',themeMode)
-}
 
-ligthModeBtn.addEventListener('click', () => setTemeMode('light'))
 
-darkModeBtn.addEventListener('click',() => setTemeMode('dark'))
 
-let saveThemeMode = localStorage.getItem('themeMode')
-
-setTemeMode(saveThemeMode || 'light')
-
+let dateSeries =[30,25,27, 40, 35, 50, 49, 60,25, 70, 91, 100,105,85,125,110,70, 35,12, 14, 15,50]
+let dateCategories = [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2001,2002,2007,2010,2012,2017,2018,2019,2020,2021,2024]
 
 
 var options = {
@@ -63,10 +56,10 @@ var options = {
   },
   series: [{
     name: 'فروش',
-    data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 12, 14, 15]
+    data: dateSeries
   }],
   xaxis: {
-    categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2001],
+    categories: dateCategories,
     axisBorder: {
       show: true,
       color: '#31353F',
@@ -78,7 +71,19 @@ var options = {
     axisTicks: {
       show: false,
     },
+    labels:{
+      style:{
+        colors: '353E4D'
+      }
+    }
     
+  },
+  yaxis:{
+    labels:{
+      style:{
+        colors: '#353E4D'
+      }
+    }
   },
   dataLabels: {
     enabled: false
@@ -124,3 +129,37 @@ btnOne.addEventListener('click', function (e) {
   }])
 
 })
+
+const setTemeMode = (themeMode) =>{
+  document.documentElement.setAttribute('data-theme',themeMode)
+  ligthModeBtn.classList.toggle('active_darkmode', themeMode === 'light')
+  darkModeBtn.classList.toggle('active_darkmode', themeMode === 'dark')
+  localStorage.setItem('themeMode',themeMode)
+  let labelsColor = themeMode === 'dark'? '#9E9E9E': '#353E4D'
+  chart.updateOptions({
+    yaxis:{
+      labels:{
+        style:{
+          colors: labelsColor
+        }
+      }
+    },
+    xaxis: {
+      categories: dateCategories,
+      labels:{
+        style:{
+          colors: labelsColor
+        }
+      }
+      
+    },
+  })
+}
+
+ligthModeBtn.addEventListener('click', () => setTemeMode('light'))
+
+darkModeBtn.addEventListener('click',() => setTemeMode('dark'))
+
+let saveThemeMode = localStorage.getItem('themeMode')
+
+setTemeMode(saveThemeMode || 'light')
