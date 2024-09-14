@@ -77,7 +77,9 @@ body{
 :root[data-theme="dark"] .search_box_header button svg path,:root[data-theme="dark"] .message_user button svg path{
     fill: var(--color_9E9E9E);
 }
-
+:root[data-theme="dark"] .account_text_user span{
+    color: var(--color_white);
+}
 
 
 /* *****************************************/

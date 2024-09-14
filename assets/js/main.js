@@ -110,7 +110,7 @@ chart.render();
 let btnSeconde = document.querySelector('#seconde_btn')
 let btnOne = document.querySelector('#one_btn')
 
-btnSeconde.addEventListener('click', function (e) {
+btnSeconde?.addEventListener('click', function (e) {
 
   console.log('click')
   chart.updateSeries([{
@@ -120,7 +120,7 @@ btnSeconde.addEventListener('click', function (e) {
 
 })
 
-btnOne.addEventListener('click', function (e) {
+btnOne?.addEventListener('click', function (e) {
 
   console.log('click')
   chart.updateSeries([{
