@@ -39,6 +39,8 @@ body{
     --color_bg_gray:#14161D;
     --color_bg_201F21:#201F21;
     --color_text_E4E4E4:#E4E4E4;
+    --color_F0F2F5:#F0F2F5;
+    --color_4CAF50:#4CAF50;
 }
 
 
@@ -814,8 +816,11 @@ header .user_info .full_name_user{
     opacity: 0.6;
 }
 
-.container_chart_view{
-
+.charts_card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+    gap: 30px;
+    margin-top: 1rem;
 }
 .card_chart_item{
     border-radius: 12px;
@@ -835,6 +840,20 @@ header .user_info .full_name_user{
     text-align: right;
 }
 
+.card_chart_header .title span:first-child{
+    color: var(--color_gray);
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+}
+
+.card_chart_header .title span:last-child{
+    color: var(--color_gray);
+    font-size: 24px;
+    font-weight: 700;
+   margin-top: 5px;
+}
+
 .icon_chart_card {
     border-radius: 12px;
     width: 64px;
@@ -843,7 +862,7 @@ header .user_info .full_name_user{
     align-items: center;
     justify-content: center;
     position: relative;
-    top: -29px;
+    top: -30px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
@@ -852,10 +871,27 @@ header .user_info .full_name_user{
 .icon_account_circle{
     background: linear-gradient(to bottom, #353E4D , #202020);
 }
-.title{
-
+.icon_chart_bar{
+    background: linear-gradient(to bottom, #E93B77 , #DA1F63);
+}
+.icon_chart_store{
+    background: linear-gradient(to bottom, #63B967 , #4BA64F);
+}
+.icon_account_plus{
+    background: linear-gradient(to bottom, #439DEE , #1E78E9);
+}
+.card_chart_footer{
+    border-top: 1px solid var(--color_F0F2F5);
+    padding: 12px;
 }
 
-.card_chart_footer{
-
+.card_chart_footer span:first-child{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color_4CAF50);
+}
+.card_chart_footer span:last-child{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--color_gray);
 }
