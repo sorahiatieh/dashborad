@@ -813,3 +813,49 @@ header .user_info .full_name_user{
     color: var(--color_black);
     opacity: 0.6;
 }
+
+.container_chart_view{
+
+}
+.card_chart_item{
+    border-radius: 12px;
+    box-shadow: 0 2PX 7PX 0 RGBA(0,0,0,0.1);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.card_chart_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    height: 70px;
+}
+.card_chart_header .title{
+    text-align: right;
+}
+
+.icon_chart_card {
+    border-radius: 12px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -29px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.icon_account_circle{
+    background: linear-gradient(to bottom, #353E4D , #202020);
+}
+.title{
+
+}
+
+.card_chart_footer{
+
+}
