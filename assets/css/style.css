@@ -911,9 +911,45 @@ header .user_info .full_name_user{
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
 }
-.line_card_graph{}
-.bg_gradients_red{}
-.caption_card_graph{}
-.footer_card_graph{}
-.bg_gradients_green{}
-.bg_gradients_black{}
+.line_card_graph{
+    height: 172px;
+    border-radius: 8px;
+    position: relative;
+    top: -35px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.bg_gradients_red{
+    background: linear-gradient(177deg,#E93B77 48% , #DA1F63);
+}
+.bg_gradients_green{
+    background: linear-gradient(177deg,#63B967 48% , #4BA64F);
+}
+.bg_gradients_black{
+    background: linear-gradient(177deg,#3E3D45 48% , #202020);
+}
+.caption_card_graph h5{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color_gray);
+    margin-bottom: 2px;
+}
+.caption_card_graph span{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color_gray);
+}
+.footer_card_graph{
+    border-top: 1px solid var(--color_F0F2F5);
+    margin-top: 12px;
+    height: 50px;
+    line-height: 50px;
+    padding-bottom: 17px;
+}
+.footer_card_graph span{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color_gray);
+}
